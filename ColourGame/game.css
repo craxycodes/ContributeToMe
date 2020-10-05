@@ -1,0 +1,38 @@
+.abc{
+	background: #3333FF;
+	padding: 10px;
+	margin: 5px;
+	margin-bottom: 0px;
+}
+body{
+	background: #111111;
+}
+.thumbnai{
+	margin: 20px 5px 10px 5px;
+	float:left;
+	width:150px;
+	height:150px;
+}
+.row
+{
+	margin:auto;
+	width:500px;
+}
+h1{
+	color:white;
+}h2{
+	color:white;
+}h3{
+	color:white;
+}
+#strip{
+	background: #FFFFFF;
+	height:5	0px;
+	/*width:1%;*/
+	padding: 10px;
+	margin: 5px;
+	margin-top: 0px
+}
+.ha{
+	float: right;
+}
