@@ -1,0 +1,172 @@
+.login {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue; */
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.oAuth {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid grey;
+  margin: 10px;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 12px -5px grey;
+}
+
+.smallText {
+  font-weight: 200;
+  font-size: 0.8em;
+  margin: 10px 0;
+}
+
+.field {
+  width: 60%;
+  margin: 10px 5px;
+  padding: 15px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+.field:focus {
+  outline: none;
+}
+
+.subText {
+  width: 80%;
+  font-weight: 200;
+  font-size: 0.9em;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.submit {
+  margin: 10px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: rgb(255, 97, 40);
+}
+
+.leftNotice {
+  z-index: 3;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: orangered;
+  box-shadow: 0px 0px 12px -5px grey;
+  transition: 0.5s all;
+}
+
+.side-appear {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.side-enter {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.side-enter-done {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1000ms, opacity 1000ms;
+}
+
+.side-exit {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 1000ms, opacity 1000ms;
+}
+
+.main-appear {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.main-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.main-enter-done {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1000ms, opacity 500ms;
+}
+
+.main-exit {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms, opacity 500ms;
+}
+
+.sideScreen-appear {
+  opacity: 1;
+  transform: translateX(50%);
+}
+.sideScreen-enter {
+  opacity: 1;
+  transform: translateX(50%);
+}
+
+.sideScreen-enter-done {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1000ms;
+}
+
+.sideScreen-exit {
+  opacity: 1;
+  transform: translateX(100%);
+  transition: transform 1000ms;
+}
+.success{
+  background-color: rgb(43, 194, 101);
+}
+
+.error{
+  background-color: rgb(253, 88, 59);
+}
